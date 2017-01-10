@@ -23,33 +23,33 @@ public class loginStepDefinitions {
   LoginPage login;
 
   @Given("^I navigate to Pivotal Tracker Website$")
-  public void OpenPivotalTracker() throws IOException {
+  public void openPivotalTracker() throws IOException {
     driver = Driver.getDriver().openBrowser();
     login = new LoginPage(driver);
   }
 
   @When("^I set a valid username/email as (.*?)$")
-  public void ValidUsernameOrEmailIsSet(String userName) {
+  public void validUsernameOrEmailIsSet(String userName) {
     login.setUserName(userName);
   }
 
   @And("^I press NEXT button a new password field should appear$")
-  public void ANewPasswordFieldAppears() {
+  public void aNewPasswordFieldAppears() {
     login.clickContinue();
   }
 
   @And("^I set a valid password as (.*?)$")
-  public void ValidPasswordIsSet(String password) {
+  public void validPasswordIsSet(String password) {
     login.setPassword(password);
   }
 
   @And("^I press the SIGN IN button$")
-  public void SignInButtonIsPressed(){
+  public void signInButtonIsPressed(){
     login.clickSubmit();
   }
 
   @Then("^I should be redirected to the Pivotal Dashboard and see the url as (.*?)$")
-  public void I_should_see_that_I_Logged_on_this_url(String url) {
+  public void redirectToPivotalTrackerDashboard(String url) {
     String actualResult = driver.getCurrentUrl();
     assertEquals(actualResult, url);
   }
