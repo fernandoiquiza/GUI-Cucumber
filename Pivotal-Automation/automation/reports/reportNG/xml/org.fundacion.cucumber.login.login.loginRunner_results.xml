@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Sign-In on Pivotal Tracker"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="14.412">
+  <properties />
+  
+  
+            <testcase name="feature" time="14.412" classname="org.fundacion.cucumber.login.login.loginRunner" />
+      
+</testsuite>

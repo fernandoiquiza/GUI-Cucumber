@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="TaskSuite">
+    <listeners>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+        <listener class-name="org.fundacion.common.listener.ExecutionListener" />
+    </listeners>
+    <test name="TaskTest">
+        <classes>
+            <class name="org.fundacion.automation.task.TestCreateTask"/>
+            <class name="org.fundacion.automation.task.TestEditTask"/>
+            <class name="org.fundacion.automation.task.TestDeleteTask"/>
+            <class name="org.fundacion.automation.task.TestCannotCreateTaskWithoutName"/>
+            <class name="org.fundacion.automation.task.TestCreateMultipleTaskWithTheSameName"/>
+        </classes>
+    </test>
+</suite>

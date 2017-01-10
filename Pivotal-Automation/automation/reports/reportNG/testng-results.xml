@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Cucumber test" duration-ms="14960" started-at="2017-01-09T13:44:56Z" finished-at="2017-01-09T13:45:11Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:org.fundacion.cucumber.login.login.loginRunner@525b461a]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Sign-In on Pivotal Tracker" duration-ms="14960" started-at="2017-01-09T13:44:56Z" finished-at="2017-01-09T13:45:11Z">
+      <class name="org.fundacion.cucumber.login.login.loginRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:org.fundacion.cucumber.login.login.loginRunner@525b461a]" name="setUpClass" is-config="true" duration-ms="388" started-at="2017-01-09T09:44:56Z" finished-at="2017-01-09T09:44:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:org.fundacion.cucumber.login.login.loginRunner@525b461a]" name="feature" duration-ms="14412" started-at="2017-01-09T09:44:57Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2017-01-09T09:45:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Sign-In to Pivotal Tracker]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:org.fundacion.cucumber.login.login.loginRunner@525b461a]" name="tearDownClass" is-config="true" duration-ms="10" started-at="2017-01-09T09:45:11Z" finished-at="2017-01-09T09:45:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- org.fundacion.cucumber.login.login.loginRunner -->
+    </test> <!-- Sign-In on Pivotal Tracker -->
+  </suite> <!-- Cucumber test -->
+</testng-results>
